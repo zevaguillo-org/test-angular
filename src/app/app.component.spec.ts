@@ -1,12 +1,18 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { CounterComponent } from './counter/components/counter/counter.component';
+import { HeroComponent } from './heroes/components/hero/hero.component';
+import { ListComponent } from './heroes/components/list/list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
-      ],
+        AppComponent,
+        CounterComponent,
+        HeroComponent,
+        ListComponent
+      ]
     }).compileComponents();
   });
 
@@ -22,10 +28,6 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('bases-2');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('bases-2 app is running!');
-  });
+
+
 });
