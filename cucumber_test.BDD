@@ -7,4 +7,4 @@ Scenario: Agregar una nueva tarea
   Given que estoy en la página de administración de tareas
   When ingreso una nueva tarea "Completar informe mensual"
   And presiono el botón de agregar tarea
-  Then debería ver la tarea "Completar informe mensual" en la lista de tareas
+  Then debería ver la tarea "Completar informe mensual y todo" en la lista de tareas
